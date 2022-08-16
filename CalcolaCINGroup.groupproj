@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F2B048E3-F496-43AE-96D8-03AB83542B62}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FmxVersion\dpr\CalcolaCINFmx.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VclVersion\dpr\CalcolaCINVCL.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CalcolaCINFmx">
+        <MSBuild Projects="FmxVersion\dpr\CalcolaCINFmx.dproj"/>
+    </Target>
+    <Target Name="CalcolaCINFmx:Clean">
+        <MSBuild Projects="FmxVersion\dpr\CalcolaCINFmx.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CalcolaCINFmx:Make">
+        <MSBuild Projects="FmxVersion\dpr\CalcolaCINFmx.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CalcolaCINVCL">
+        <MSBuild Projects="VclVersion\dpr\CalcolaCINVCL.dproj"/>
+    </Target>
+    <Target Name="CalcolaCINVCL:Clean">
+        <MSBuild Projects="VclVersion\dpr\CalcolaCINVCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CalcolaCINVCL:Make">
+        <MSBuild Projects="VclVersion\dpr\CalcolaCINVCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CalcolaCINFmx;CalcolaCINVCL"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CalcolaCINFmx:Clean;CalcolaCINVCL:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CalcolaCINFmx:Make;CalcolaCINVCL:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

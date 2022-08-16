@@ -1,0 +1,244 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Calcolo del CIN'
+  ClientHeight = 481
+  ClientWidth = 520
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 0
+  object pnlTop: TPanel
+    Align = MostTop
+    Size.Width = 520.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnExit: TButton
+      Action = ActionExit
+      Anchors = [akTop, akRight]
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 420.000000000000000000
+      Position.Y = 15.000000000000000000
+      TabOrder = 11
+    end
+  end
+  object pnlSource: TPanel
+    Align = MostTop
+    Position.Y = 49.000000000000000000
+    Size.Width = 520.000000000000000000
+    Size.Height = 138.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnExtract: TButton
+      Action = ActionExtract
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 219.000000000000000000
+      Position.Y = 35.000000000000000000
+      TabOrder = 2
+    end
+    object edtABICode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 12
+      Position.X = 196.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object edtCABCode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 13
+      Position.X = 272.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object edtContoCode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 14
+      Position.X = 347.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 160.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object edtIBAN: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 8
+      Position.X = 9.000000000000000000
+      Position.Y = 35.000000000000000000
+      Size.Width = 202.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object edtNationCode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 9
+      Position.X = 9.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 28.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object edtControlCode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 10
+      Position.X = 63.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 43.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object edtCINCode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 11
+      Position.X = 162.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 28.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Position.X = 196.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 34.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ABI'
+      TabOrder = 7
+    end
+    object Label2: TLabel
+      Position.X = 272.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 37.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CAB'
+      TabOrder = 6
+    end
+    object Label3: TLabel
+      Position.X = 347.000000000000000000
+      Position.Y = 80.000000000000000000
+      Text = 'Conto Corrente'
+      TabOrder = 1
+    end
+    object Label4: TLabel
+      Position.X = 9.000000000000000000
+      Position.Y = 13.000000000000000000
+      Text = 'IBAN'
+      TabOrder = 0
+    end
+    object Label6: TLabel
+      AutoSize = True
+      Position.X = 9.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 52.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Nazione'
+      TabOrder = 5
+    end
+    object Label7: TLabel
+      AutoSize = True
+      Position.X = 63.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Codice Controllo'
+      TabOrder = 4
+    end
+    object Label8: TLabel
+      AutoSize = True
+      Position.X = 162.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 37.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CIN'
+      TabOrder = 3
+    end
+  end
+  object pnlCalc: TPanel
+    Align = MostTop
+    Position.Y = 187.000000000000000000
+    Size.Width = 520.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object edtCINResult: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      TabStop = False
+      ReadOnly = True
+      Position.X = 12.000000000000000000
+      Position.Y = 26.000000000000000000
+      Size.Width = 37.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      CharCase = ecUpperCase
+    end
+    object Label5: TLabel
+      Position.X = 12.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CIN'
+      TabOrder = 2
+    end
+    object btnCalculator: TButton
+      Action = ActionCalculator
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 57.000000000000000000
+      Position.Y = 26.000000000000000000
+      TabOrder = 8
+    end
+  end
+  object LogMemo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 520.000000000000000000
+    Size.Height = 234.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 516.000000000000000000
+    Viewport.Height = 230.000000000000000000
+  end
+  object ActionList: TActionList
+    OnUpdate = ActionListUpdate
+    Left = 342
+    Top = 22
+    object ActionExit: TAction
+      Text = 'Uscita'
+      OnExecute = ActionExitExecute
+    end
+    object ActionExtract: TAction
+      Text = 'Estrai'
+      Hint = 'Estrae i dati dall'#39'IBAN'
+      OnExecute = ActionExtractExecute
+    end
+    object ActionCalculator: TAction
+      Text = 'Calcola'
+      Hint = 'Calcola il valore del CIN'
+      OnExecute = ActionCalculatorExecute
+    end
+  end
+end

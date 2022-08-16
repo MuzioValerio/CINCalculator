@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/10/16 12:57:55.000.274,=C:\Users\muzio1\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/10/16 14:19:43.000.215,=C:\Users\muzio1\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/12/23 19:42:11.000.203,=C:\Users\muzio1\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/31 13:25:00.000.964,=C:\Users\muzio1\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/16 20:01:55.000.323,=C:\Users\muzio1\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/16 20:13:59.000.750,D:\Lavori_git\CalcoloCINBancario\VclVersion\src\uMain.dfm=C:\Users\muzio1\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/03/16 20:13:59.000.750,D:\Lavori_git\CalcoloCINBancario\VclVersion\src\uMain.pas=C:\Users\muzio1\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/16 20:15:39.000.278,D:\Lavori_git\CalcoloCINBancario\CalcolaCINGrp.dproj=C:\Users\muzio1\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2022/03/16 20:16:15.000.289,D:\Lavori_git\CalcoloCINBancario\CalcolaCINVCL.dproj=D:\Lavori_git\CalcoloCINBancario\CalcolaCINGrp.dproj</Transaction>
+    <Transaction>2022/03/16 20:22:29.000.636,=D:\Lavori_git\CalcoloCINBancario\common\uBaseValue.pas</Transaction>
+    <Transaction>2022/03/16 20:22:33.000.909,=D:\Lavori_git\CalcoloCINBancario\common\uCINCalculator.pas</Transaction>
+  </Transactions>
+</BorlandProject>
